@@ -2,10 +2,11 @@
 title: "Survival analysis with Risk Score from gene signatures"
 
 
-date: "Thursday, 23 June 2020"
+date: "June 23, 2020"
 layout: post
 ---
 
+<script src="{{ site.url }}{{ site.baseurl }}/knitr_files/knitr-minimal_files/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 <section class="main-content">
 <div id="idea" class="section level2">

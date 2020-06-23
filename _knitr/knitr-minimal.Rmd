@@ -1,7 +1,6 @@
 ---
 title: Survival analysis with Risk Score from gene signatures
-date: "Thursday, 23 June 2020"
-# "`r format(Sys.time(), '%d %B, %Y')`"
+date: June 23, 2020
 output: 
   prettydoc::html_pretty:
     theme: cayman
