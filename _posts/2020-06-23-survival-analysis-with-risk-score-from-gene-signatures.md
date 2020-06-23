@@ -44,7 +44,7 @@ Risk Score in accordance to Hess et al.
 Testing performance of Risk Score in survival analysis
 </p>
 </div>
-<p>In short, I was able to simply extract 4 genes from 100 potential candidates and compress them into one simple number: a Risk Score. Then, I used the Risk Score to see if I could group the TCGA patients into high and low Risk (Risk- and Risk+). So, out of 100 genes I could describe 4 genes that do play a role for patient survival and would be candidates for further analysis, e.g. by <em>in vitro</em> experiments on functionality. The whole analysis with necessary data sets is uploaded to my <a href="https://github.com/HenrikSchinke/RiskScore_pEMT">GitHub page</a> and a more detailled description is in my <a href="https://henrikschinke.github.io/RiskScore_pEMT.html">R section on my website</a>.</p>
+<p>In short, I was able to extract 4 genes from 100 potential candidates and compress them into one simple number: a Risk Score. Then, I used the Risk Score to see if I could group the TCGA patients into low and high Risk (Risk- and Risk+). So, out of 100 genes I could describe 4 genes that do play a role for patient survival and would be candidates for further analysis, e.g. by <em>in vitro</em> experiments on functionality. The whole analysis with necessary data sets is uploaded to my <a href="https://github.com/HenrikSchinke/RiskScore_pEMT">GitHub page</a> and a more detailled description is in my <a href="https://henrikschinke.github.io/RiskScore_pEMT.html">R section on my website</a>.</p>
 </div>
 <div id="what-do-you-need-to-do-it-yourself" class="section level2">
 <h2>What do you need to do it yourself?</h2>
@@ -53,6 +53,7 @@ Testing performance of Risk Score in survival analysis
 <li>Patient data, e.g. from TCGA</li>
 <li>Basic to intermediate R knowledge</li>
 <li>Basic understanding of Cox models</li>
+<li>GitHub account to download my data &amp; Scripts</li>
 </ul>
 </div>
 </section>
