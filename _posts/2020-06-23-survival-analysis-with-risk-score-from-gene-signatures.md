@@ -53,7 +53,7 @@ Testing performance of Risk Score in survival analysis
 <li>Patient data, e.g. from TCGA</li>
 <li>Basic to intermediate R knowledge</li>
 <li>Basic understanding of Cox models</li>
-<li>GitHub account to download my data &amp; Scripts</li>
+<li>GitHub account to download my data &amp; scripts</li>
 </ul>
 </div>
 </section>

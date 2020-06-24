@@ -153,4 +153,4 @@ The whole analysis with necessary data sets is uploaded to my [GitHub page](http
 - Patient data, e.g. from TCGA
 - Basic to intermediate R knowledge
 - Basic understanding of Cox models
-- GitHub account to download my data & Scripts 
+- GitHub account to download my data & scripts 
