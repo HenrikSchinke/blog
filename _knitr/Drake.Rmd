@@ -17,7 +17,7 @@ If your blueprint (analysis) is quite complex, your machine might take a while t
 
 So instead of burning down everything, why not just remove the old roof and add a new one on top? This would make things a lot easier to follow up and much faster to get to your final results.
 
-![*Build, change, and add change*](house2.jpg)
+![*Build, change, and add change*](Drake_files/figure-html/house2.jpg)
 
 [Will Landau](https://github.com/wlandau?tab=repositories) wrote an R package called [Drake](https://books.ropensci.org/drake/) to do exactly that and much more. Recently, I started using Drake and I do not want to miss it anymore. Even though, Drake means adding yet another layer of complexity to your code, the benefits are justifying the initial addition of complexity. 
 
@@ -42,17 +42,14 @@ Drake wants one R-script containing all your data munging steps as functions. Th
 
 And here comes the next synergistic feature; since all your data munging will be structured in one R-script, Drake needs you to write a plan about when and where to apply your functions. This plan can be visualized as an interactive dependency graph. In the default HTML-output file, you may re-shuffle your objects and functions. Drake even tells you the time spent for calculation. I use this dependency graph to examine and explain my workflow to colleagues and superiors. Here, I posted a static workflow example of an analysis on RNASeq data I am currently doing. If your actually creating your on depency graph with `vis_drake_graph()` it will be an interactive HTML-file. 
 
-![*Static example of Dependency Graph*](Screenshot 2020-08-05 at 16.24.11.png)
+![*Static example of Dependency Graph*](Drake_files/figure-html/Screenshot 2020-08-05 at 16.24.11.png)
 
 ### 3- Time saver
 
 Within the dependency graph, outdated items are marked. Drake understands which steps have been outdated, deleted or are missing for whatever reason. To recall the introductory analogy; if you only want to change the roof of your house, Drake will realize that the basement and ground floor are still the same. Thus, only the roof will be re-build and added. As you may see in the dependency graph, parts of my workflow take minutes. So, running outdated steps only can be a massive time saver! What Drake does is that it creates a hidden cache. A good thing is that you may access your cache at any time by using the `readd()` or `loadd()` commands to look at an object of your workflow. With the command `r_drake_build(target = "XYZ")` you can furhter build specific target objects only. This makes you independent of the workspace restoring of R-Studio. In fact, when using Drake I would recommend to turn off the default mode of R-Studio in your project options.
 
-```{r R-Studio default settings, echo=FALSE}
-img <- png::readPNG(source = "Screenshot 2020-08-05 at 15.54.28.png")
-plot(NA, xlim = c(0, 1), ylim = c(0, 2), type = "n", xaxt = "n", yaxt = "n", xlab = "", ylab = "")
-rasterImage(img, 0.25, 0, .75, 2)
-```
+
+![*R-Studio default settings*](Drake_files/figure-html/Screenshot 2020-08-05 at 15.54.28.png)
 
 ## Further links
 
