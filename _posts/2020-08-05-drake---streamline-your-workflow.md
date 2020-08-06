@@ -49,7 +49,7 @@ layout: post
 <h3>3- Time saver</h3>
 <p>Within the dependency graph, outdated items are marked. Drake understands which steps have been outdated, deleted or are missing for whatever reason. To recall the introductory analogy; if you only want to change the roof of your house, Drake will realize that the basement and ground floor are still the same. Thus, only the roof will be re-build and added. As you may see in the dependency graph, parts of my workflow take minutes. So, running outdated steps only can be a massive time saver! What Drake does is that it creates a hidden cache. A good thing is that you may access your cache at any time by using the <code>readd()</code> or <code>loadd()</code> commands to look at an object of your workflow. With the command <code>r_drake_build(target = "XYZ")</code> you can furhter build specific target objects only. This makes you independent of the workspace restoring of R-Studio. In fact, when using Drake I would recommend to turn off the default mode of R-Studio in your project options.</p>
 <div class="figure">
-<img src="Screenshot%202020-08-05%20at%2015.54.28.png" alt="" />
+<img src="{{ site.url }}{{ site.baseurl }}/_knitr/knitr-minimal_files/figure-html/unnamed-chunk-1-1.png" alt="" />
 <p class="caption"><em>R-Studio default settings</em></p>
 </div>
 </div>
