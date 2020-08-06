@@ -11,7 +11,7 @@ output:
 
 To explain the reason for this blog post, I want to use an analogy. Let's think of data analysis as we would be building a house. Ideally, you design your blueprint and then build the house of your dreams. But in nearly 100 % of the cases, this will not happen. Most likely, there will be a rough idea and a draft rather than a true well structured workflow. You will build your house, then look at it and finally decide you want a different roof. Because you are in the process, your (R-)environment looks quite messy and you are not certain of all your intermediate steps. Thus, you decide to re-build everything from scratch and, at the last step, replace the roof with the new one.
 
-![*Build, destroy, and re-build*](house1.jpg)
+![*Build, destroy, and re-build*](Drake_files/figure-html/house1.jpg)
 
 If your blueprint (analysis) is quite complex, your machine might take a while to re-build your house. This can not only be time consuming but also confusing and frustrating. 
 
@@ -49,13 +49,9 @@ And here comes the next synergistic feature; since all your data munging will be
 Within the dependency graph, outdated items are marked. Drake understands which steps have been outdated, deleted or are missing for whatever reason. To recall the introductory analogy; if you only want to change the roof of your house, Drake will realize that the basement and ground floor are still the same. Thus, only the roof will be re-build and added. As you may see in the dependency graph, parts of my workflow take minutes. So, running outdated steps only can be a massive time saver! What Drake does is that it creates a hidden cache. A good thing is that you may access your cache at any time by using the `readd()` or `loadd()` commands to look at an object of your workflow. With the command `r_drake_build(target = "XYZ")` you can furhter build specific target objects only. This makes you independent of the workspace restoring of R-Studio. In fact, when using Drake I would recommend to turn off the default mode of R-Studio in your project options.
 
 ```{r R-Studio default settings, echo=FALSE}
-img <- png::readPNG(system.file("img", "Rlogo.png", package="png"))
-
-plot(NA, xlim = c(0, 2), ylim = c(0, 4), type = "n", xaxt = "n", yaxt = "n", xlab = "", ylab = "")
-rasterImage(img, 1, 3, 2, 4)
-rasterImage(img, 1, 2, 2, 3)
-rasterImage(img, 1, 1, 2, 2)
-rasterImage(img, 1, 0, 2, 1)
+img <- png::readPNG(source = "Screenshot 2020-08-05 at 15.54.28.png")
+plot(NA, xlim = c(0, 1), ylim = c(0, 2), type = "n", xaxt = "n", yaxt = "n", xlab = "", ylab = "")
+rasterImage(img, 0.25, 0, .75, 2)
 ```
 
 ## Further links

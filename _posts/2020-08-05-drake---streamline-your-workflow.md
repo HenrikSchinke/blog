@@ -13,7 +13,7 @@ layout: post
 <h2>Idea</h2>
 <p>To explain the reason for this blog post, I want to use an analogy. Let’s think of data analysis as we would be building a house. Ideally, you design your blueprint and then build the house of your dreams. But in nearly 100 % of the cases, this will not happen. Most likely, there will be a rough idea and a draft rather than a true well structured workflow. You will build your house, then look at it and finally decide you want a different roof. Because you are in the process, your (R-)environment looks quite messy and you are not certain of all your intermediate steps. Thus, you decide to re-build everything from scratch and, at the last step, replace the roof with the new one.</p>
 <div class="figure">
-<img src="{{ site.url }}{{ site.baseurl }}/_knitr/house1.jpg" alt="" />
+<img src="{{ site.url }}{{ site.baseurl }}/knitr_files/Drake_files/figure-html/house1.jpg" alt="" />
 <p class="caption"><em>Build, destroy, and re-build</em></p>
 </div>
 <p>If your blueprint (analysis) is quite complex, your machine might take a while to re-build your house. This can not only be time consuming but also confusing and frustrating.</p>
